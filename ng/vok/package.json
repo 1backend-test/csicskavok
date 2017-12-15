@@ -1,6 +1,6 @@
 {
 	"name": "@1backend/csicskavok-vok-ng",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Clients for 1Backend services of csicskavok",
 	"main": "./lib/index.js",
 	"typings": "./lib/index.d.ts",

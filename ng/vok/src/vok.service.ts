@@ -16,12 +16,12 @@ export class Service {
     return this.ngClient.call<string>("csicskavok", "vok", "GET", "/imported-hi", {  });
   }
 
-  postInputExample(rect: Rectangle, unit: string): Promise<Output> {
-    return this.ngClient.call<Output>("csicskavok", "vok", "POST", "/input-example", { "rect": rect, "unit": unit });
-  }
-
   getSqlExample(): Promise<void> {
     return this.ngClient.call<void>("csicskavok", "vok", "GET", "/sql-example", {  });
+  }
+
+  postInputExample(rect: Rectangle, unit: string): Promise<Output> {
+    return this.ngClient.call<Output>("csicskavok", "vok", "POST", "/input-example", { "rect": rect, "unit": unit });
   }
 
 }
